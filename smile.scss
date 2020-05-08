@@ -17,13 +17,23 @@ body {
   box-sizing: border-box;
 }
 
+@keyframes sociale {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .social {
   width: 100%;
   background: #12c2e9;
   /* fallback for old browsers */
   background: -webkit-linear-gradient(to left, #f64f59, #c471ed, #12c2e9);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to left, #f64f59, #c471ed, #12c2e9);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -34,7 +44,9 @@ body {
     display: flex;
     justify-content: flex-end;
     padding-right: 10vw;
-
+    animation-name: sociale;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
     a {
       &:hover {
         color: #cccccc;
@@ -50,7 +62,9 @@ body {
     align-items: center;
     text-align: center;
     padding-left: 8vw;
-
+    animation-name: sociale;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
     i {
       padding-left: 20px;
       text-decoration: none;
@@ -118,7 +132,39 @@ ul {
 
 .display-2 {
   font-weight: bold;
+  color: white;
   text-shadow: 2px 2px 0 #000;
+  position: relative;
+  animation-name: textmare;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes textmare{
+  0% {
+left: 1600px;
+  }
+  100% {
+left: 20px;
+  }
+}
+
+@keyframes butonjumbo{
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes textmic{
+  0% {
+right: 600px;
+  }
+  100% {
+right: 0px;
+  }
 }
 
 .jumbo {
@@ -132,15 +178,16 @@ ul {
   display: flex;
   height: 36vw;
   overflow: hidden;
-
   p {
     color: white;
+    position: relative;
+    animation-name: textmic;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
   }
-
   img {
     height: 40vw;
   }
-
   .textjumbo {
     display: flex;
     flex-direction: column;
@@ -150,6 +197,7 @@ ul {
     align-items: center;
 
     p {
+      position: relative;
       padding-bottom: 1vw;
       text-shadow: 1px 1px 0 #000;
     }
@@ -158,10 +206,19 @@ ul {
   button {
     &:hover {
       background: white;
-      color: #12c2e9;
-      transition: 0.6s;
+      color: #0e9bba;
     }
-    background: #12c2e9;
+    opacity: 0;
+    position: relative;
+    animation-name: butonjumbo;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+
+    transition-property: background, color;
+    transition-duration: 0.6s;
+
+    background: #0e9bba;
     border-radius: 11px;
     padding: 20px 15px;
     color: #ffffff;
@@ -169,6 +226,7 @@ ul {
     font: normal bold 26px/1 "Roboto", sans-serif;
     text-align: center;
     text-shadow: 1px 1px #666666;
+    letter-spacing: 1px;
     width: 12vw;
     cursor: pointer;
   }
@@ -289,35 +347,30 @@ ul {
   }
 }
 
-
-
 .videos {
   width: 100%;
   position: relative;
-  p{
+
+  p {
     font-size: 2rem;
     font-weight: bold;
     text-align: left;
     padding-top: 10px;
     padding-bottom: 60px;
     color: white;
+
     span {
       color: #10aed1;
     }
   }
+
   .asociatia {
-    position:absolute;
- top:10%;
- left:1%;
- z-index:1;
+    position: absolute;
+    top: 10%;
+    left: 1%;
+    z-index: 1;
   }
 }
-
-
-
-
-
-
 
 .contact {
   background-image: url("d1ok2.jpg");
@@ -326,28 +379,30 @@ ul {
   background-size: cover;
   width: 100%;
   height: 40vw;
-  p{
+
+  p {
     font-size: 2rem;
     font-weight: bold;
     text-align: left;
     padding-top: 10px;
     padding-bottom: 60px;
     padding-left: 30px;
+
     span {
       color: #10aed1;
     }
   }
+
   .asociatia {
     padding-top: 40px;
   }
 }
 
-
-
 .footerz {
-  p{
+  p {
     text-align: center;
     font-size: 1.4rem;
+    font-weight: 500;
     margin: 0;
     padding: 5px;
   }
