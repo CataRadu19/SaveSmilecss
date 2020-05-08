@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  letter-spacing: 1px;
+  height: 100%;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: white;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.social {
+  width: 100%;
+  background: #12c2e9;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #f64f59, #c471ed, #12c2e9);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  .socialright {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10vw;
+
+    a {
+      &:hover {
+        color: #cccccc;
+      }
+      margin-left: 20px;
+      text-decoration: none;
+      color: white;
+    }
+  }
+
+  .socialleft {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-left: 8vw;
+
+    i {
+      padding-left: 20px;
+      text-decoration: none;
+      color: white;
+    }
+
+    p {
+      padding-left: 10px;
+      margin: 0;
+      color: white;
+      font-size: 1.3rem;
+    }
+  }
+}
+
+header {
+  width: 100%;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .headerleft {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    align-items: center;
+
+    p {
+      font-weight: bold;
+      font-size: 26px;
+    }
+  }
+
+  .headerright ul {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 40px 0 0;
+
+    li {
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 1.6rem;
+      padding-left: 30px;
+    }
+  }
+}
+
+ul {
+  list-style-type: none;
+
+  a {
+    &:hover {
+      text-decoration: underline;
+      color: black;
+    }
+    color: black;
+    text-decoration: none;
+  }
+}
+
+.display-2 {
+  font-weight: bold;
+  text-shadow: 2px 2px 0 #000;
+}
+
+.jumbo {
+  width: 100%;
+  background: pink;
+  background-image: url("park.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: space-around;
+  display: flex;
+  height: 36vw;
+  overflow: hidden;
+
+  p {
+    color: white;
+  }
+
+  img {
+    height: 40vw;
+  }
+
+  .textjumbo {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    padding-top: 70px;
+    text-align: center;
+    align-items: center;
+
+    p {
+      padding-bottom: 1vw;
+      text-shadow: 1px 1px 0 #000;
+    }
+  }
+
+  button {
+    &:hover {
+      background: white;
+      color: #12c2e9;
+      transition: 0.6s;
+    }
+    background: #12c2e9;
+    border-radius: 11px;
+    padding: 20px 15px;
+    color: #ffffff;
+    display: inline-block;
+    font: normal bold 26px/1 "Roboto", sans-serif;
+    text-align: center;
+    text-shadow: 1px 1px #666666;
+    width: 12vw;
+    cursor: pointer;
+  }
+}
+
+.servicii {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1px solid #D3D3D3;
+
+  .column1234 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 20%;
+    padding-bottom: 50px;
+
+    button {
+      &:hover {
+        background: white;
+        color: #12c2e9;
+        transition: 0.6s;
+      }
+      background: #12c2e9;
+      border-radius: 11px;
+      padding: 10px;
+      color: #ffffff;
+      display: inline-block;
+      font: normal bold 20px/1 "Roboto", sans-serif;
+      text-align: center;
+      text-shadow: 1px 1px #666666;
+      width: 11vw;
+      cursor: pointer;
+    }
+
+    h1 {
+      padding-top: 30px;
+      padding-bottom: 20px;
+      font-size: 4rem;
+      font-weight: 500;
+    }
+
+    p {
+      padding-top: 30px;
+      padding-bottom: 10px;
+      font-size: 1.7rem;
+    }
+
+    img {
+      height: 230px;
+      width: 230px;
+      border-radius: 50%;
+      box-shadow: 0 5px 15.3px rgba(0, 0, 0, 0.045), 0 40px 122px rgba(0, 0, 0, 0.09);
+    }
+  }
+}
+
+.fusion {
+  border-color: black;
+  border-top: 1px solid black;
+  margin: 20px auto 60px;
+  width: 100%;
+  max-width: 40%;
+}
+
+.galerie {
+  width: 100%;
+
+  .galerietext {
+    h1 {
+      font-weight: 600;
+    }
+    padding-top: 40px;
+    padding-bottom: 20px;
+    text-align: center;
+  }
+
+  .textjosgale {
+    font-size: 1.6rem;
+    padding-top: 40px;
+    padding-bottom: 30px;
+  }
+}
+
+.galerierows {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  .row123 {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+      &:hover {
+        color: black;
+        transition: 0.7s;
+      }
+      cursor: pointer;
+      padding-top: 5px;
+      color: #12c2e9;
+    }
+
+    p {
+      width: 90%;
+      font-size: 1.3rem;
+    }
+
+    img {
+      height: 200px;
+      width: 300px;
+    }
+  }
+}
+
+
+
+.videos {
+  width: 100%;
+  position: relative;
+  p{
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: left;
+    padding-top: 10px;
+    padding-bottom: 60px;
+    color: white;
+    span {
+      color: #10aed1;
+    }
+  }
+  .asociatia {
+    position:absolute;
+ top:10%;
+ left:1%;
+ z-index:1;
+  }
+}
+
+
+
+
+
+
+
+.contact {
+  background-image: url("d1ok2.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 40vw;
+  p{
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: left;
+    padding-top: 10px;
+    padding-bottom: 60px;
+    padding-left: 30px;
+    span {
+      color: #10aed1;
+    }
+  }
+  .asociatia {
+    padding-top: 40px;
+  }
+}
+
+
+
+.footerz {
+  p{
+    text-align: center;
+    font-size: 1.4rem;
+    margin: 0;
+    padding: 5px;
+  }
+}
