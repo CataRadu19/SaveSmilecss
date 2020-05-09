@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  letter-spacing: 1px;
+  height: 100%;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: white;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@keyframes sociale {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+.social {
+  width: 100%;
+  background: #12c2e9;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #f64f59, #c471ed, #12c2e9);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #f64f59, #c471ed, #12c2e9);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  .socialright {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10vw;
+    align-items: center;
+    animation-name: sociale;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    a {
+      &:hover {
+        color: #cccccc;
+      }
+      margin-left: 20px;
+      text-decoration: none;
+      color: white;
+    }
+    p {
+      color: white;
+      margin-left: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      align-items: center;
+      text-align: center;
+      font-size: 1.3rem;
+      margin-bottom: 0;
+    }
+  }
+
+  .socialleft {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-left: 8vw;
+    animation-name: sociale;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    i {
+      padding-left: 20px;
+      text-decoration: none;
+      color: white;
+    }
+
+    p {
+      padding-left: 10px;
+      margin: 0;
+      color: white;
+      font-size: 1.3rem;
+    }
+  }
+}
+
+header {
+  width: 100%;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .headerleft {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    align-items: center;
+a {
+  text-decoration: none;
+  color: black;
+}
+    p {
+      &:hover {
+         transition: all 1s ;
+         background-position: 0%;
+      }
+      transition: all 1s ;
+      color: black;
+      -webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-image: linear-gradient(
+    to right,
+    	#a54a9c,
+    	#20a1dc 50%,
+    black 50%);
+    background-size: 200% 100%;
+  background-position: 100%;
+      font-weight: bold;
+      font-size: 26px;
+    }
+  }
+
+  .headerright ul {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 40px 0 0;
+    margin: 0;
+    li {
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 1.6rem;
+      padding-left: 30px;
+    }
+  }
+}
+
+ul {
+  list-style-type: none;
+
+  a {
+    &:hover {
+      text-decoration: underline;
+      color: black;
+    }
+    color: black;
+    text-decoration: none;
+  }
+}
+
+
+#active {
+  text-decoration: underline;
+}
+
+
+
+
+.footerz {
+  p {
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin: 0;
+    padding: 5px;
+  }
+}
+
+
+
+.fusion {
+  border-color: #666666  ;
+  border-top: 1px solid #666666;
+  margin: 20px auto 50px;
+  width: 100%;
+  max-width: 30%;
+}
+
+
+
+h1.ok  {
+  font-weight: 500;
+  padding-bottom: 20px;
+  position: relative;
+  animation-name: titlu;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes titlu {
+  0% {
+    top:-300px;
+  }
+  100% {
+    top: 25px;
+  }
+}
+
+
+
+
+
+
+
+.header2 {
+      h1 {
+        margin: 0;
+        padding: 0;
+        background:linear-gradient(to right, #a54a9c, #20a1dc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+        font-weight: bold;
+        font-size: 4rem;
+        padding-top: 10px;
+        padding-bottom: 20px;
+      }
+      .h1 {
+        font-weight: bold;
+        font-size: 2.2rem;
+      }
+      p {
+        font-size: 2rem;
+        font-weight: 400;
+        text-align: center;
+      }
+}
+
+
+.contfloat {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  .textechipa {
+    width: 50%;
+    padding-top: 2vw;
+    padding-left: 2vw;
+  }
+  .animechipa {
+    width: 40%;
+    img {
+      width: 480px;
+      height: 480px;
+    }
+  }
+}
+
+
+
+
+.fondator {
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  .fondatorin {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    padding-left: 10px;
+    h3 {
+      font-size: 2.4rem;
+      span {
+        padding-left: 5px;
+        font-size: 1.4rem;
+        font-weight: 500;
+      }
+    }
+    p{
+      text-align: left;
+      font-size: 1.6rem;
+    }
+  }
+  img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+  }
+}

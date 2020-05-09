@@ -26,6 +26,8 @@ body {
   }
 }
 
+
+
 .social {
   width: 100%;
   background: #12c2e9;
@@ -44,6 +46,7 @@ body {
     display: flex;
     justify-content: flex-end;
     padding-right: 10vw;
+    align-items: center;
     animation-name: sociale;
     animation-duration: 3s;
     animation-fill-mode: forwards;
@@ -54,6 +57,16 @@ body {
       margin-left: 20px;
       text-decoration: none;
       color: white;
+    }
+    p {
+      color: white;
+      margin-left: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      align-items: center;
+      text-align: center;
+      font-size: 1.3rem;
+      margin-bottom: 0;
     }
   }
 
@@ -87,14 +100,31 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
   .headerleft {
     display: -webkit-flex;
     display: -ms-flex;
     display: flex;
     align-items: center;
-
+a {
+  text-decoration: none;
+  color: black;
+}
     p {
+      &:hover {
+         transition: all 1s ;
+         background-position: 0%;
+      }
+      transition: all 1s ;
+      color: black;
+      -webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-image: linear-gradient(
+    to right,
+    	#a54a9c,
+    	#20a1dc 50%,
+    black 50%);
+    background-size: 200% 100%;
+  background-position: 100%;
       font-weight: bold;
       font-size: 26px;
     }
@@ -107,7 +137,7 @@ header {
     align-items: center;
     justify-content: space-around;
     padding: 0 40px 0 0;
-
+    margin: 0;
     li {
       text-transform: uppercase;
       font-weight: 600;
@@ -140,12 +170,17 @@ ul {
   animation-fill-mode: forwards;
 }
 
+#active {
+  text-decoration: underline;
+}
+
+
 @keyframes textmare{
   0% {
 left: 1600px;
   }
   100% {
-left: 20px;
+left: 0px;
   }
 }
 
@@ -369,6 +404,14 @@ right: 0px;
     top: 10%;
     left: 1%;
     z-index: 1;
+  }
+}
+
+.row123 {
+  a {
+    &:hover {
+      text-decoration: none;
+    }
   }
 }
 
